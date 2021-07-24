@@ -67,3 +67,7 @@ def add_user(id):
     db.session.delete(user)
     db.session.commit()
     return {"Message": "{Deleted successfully!"}
+
+
+if __name__ == '__main__':
+    app.run(debug=True)
